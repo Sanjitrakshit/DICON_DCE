@@ -59,6 +59,7 @@ const Header = () => {
               src="/images/dce-logo2.png"
               alt="Dronacharya College of Engineering Logo"
             />
+            <div className="Year"><img src="/images/Year-of-Excellnece-DCE.jpg" alt="Year of Excellnence" /></div>
           </div>
 
           <div className="header-center">
@@ -66,18 +67,22 @@ const Header = () => {
               1<sup>st</sup> Dronacharya International Conference on Intelligent
               Computing & Emerging Technologies
             </div>
-            
+
             <div className="header-title">DICON 2027</div>
 
             <div className="header-record">IEEE conference record number #73090</div>
 
-            
+
 
             <div className="header-date">23 - 24 April, 2027 | Hybrid Mode</div>
           </div>
 
           <div className="header-logo right-logo">
             <img src="/images/dicon2027.png" alt="DICON 2027 Logo" />
+            <div className="header-logo lego">
+              <img src="/images/ieee.png" alt="IEEE_logo" />
+              <img src="/images/ieee-D.png" alt="IEEE_DELHI" />
+            </div>
           </div>
         </div>
       </header>
@@ -92,7 +97,25 @@ const Header = () => {
           <li><Link to="/" className={isActive('') ? 'active' : ''} onClick={handleLinkClick}>Home</Link></li>
           <li><Link to="/institute" className={isActive('institute') ? 'active' : ''} onClick={handleLinkClick}>About Institute</Link></li>
           <li><Link to="/conference" className={isActive('conference') ? 'active' : ''} onClick={handleLinkClick}>About Conference</Link></li>
-          <li><Link to="/workshop" className={isActive('workshop') ? 'active' : ''} onClick={handleLinkClick}>About Workshop</Link></li>
+
+          <li className={`nav-item has-dropdown ${openDropdown === 'workshop' ? 'open' : ''}`}>
+            <button
+              type="button"
+              className="dropdown-btn"
+              aria-expanded={openDropdown === 'workshop'}
+              onClick={() => handleDropdownToggle('workshop')}
+            >
+              About Workshop<span className="dropdown-arrow">▾</span>
+            </button>
+            <ul className="dropdown-list">
+              <li><Link to="/workshop" className={isActive('workshop') ? 'active' : ''} onClick={handleLinkClick}>Code to Insight: Practical ML for Real-World Applications</Link></li>
+              <li><Link to="/workshop2" className={isActive('advisory') ? 'active' : ''} onClick={handleLinkClick}>Data Analytics, AI & Model-Based Design with MATLAB</Link></li>
+              <li><Link to="/workshop3" className={isActive('oversight') ? 'active' : ''} onClick={handleLinkClick}>Applied Cybersecurity Techniques: A Practical Intensive</Link></li>
+              <li><Link to="/workshop3" className={isActive('oversight') ? 'active' : ''} onClick={handleLinkClick}>FutureTech Workshop: Drones, Robotics & Embedded Intelligence </Link></li>
+
+
+            </ul>
+          </li>
           <li><Link to="/tracks" className={isActive('tracks') ? 'active' : ''} onClick={handleLinkClick}>Call for Papers</Link></li>
 
           <li className={`nav-item has-dropdown ${openDropdown === 'committee' ? 'open' : ''}`}>
@@ -148,13 +171,13 @@ const Header = () => {
 
       {location.pathname === '/' && (
         <div className="accreditation">
-           <div className="item">
+          <div className="item">
             <img src="/images/AICTE.jpg" alt="AICTE" />
           </div>
           <div className="item">
             <img src="/images/gurugram-university.jpg" alt="Gurugram University" />
           </div>
-         
+
           <div className="item">
             <img src="/images/IIC.jpg" alt="IIC" />
           </div>

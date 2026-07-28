@@ -84,6 +84,7 @@ body {
   border-bottom: 3px solid rgba(255, 255, 255, 0.12);
 }
 
+
 .top-nav {
   background-color: var(--nav-bg);
   width: 100%;
@@ -295,6 +296,7 @@ p {
   margin-bottom: 0;
 }
 
+
 .card-box ul,
 .card-box ol {
   font-size: 16px;
@@ -302,6 +304,8 @@ p {
   color: var(--text-dark);
   line-height: 1.8;
 }
+
+
 
 .card-box li {
   margin-bottom: 10px;
@@ -846,12 +850,27 @@ p {
 }
 
 .left-logo {
+  display: inline;
   justify-self: start;
 }
 
 .right-logo {
   justify-self: end;
   transform: translateX(-30px);
+}
+
+.right-logo img {
+  max-width: 185px;
+  min-width: 150px;
+ background: transparent;
+}
+
+.lego{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  padding-inline-end: 12px;
 }
 
 .header-logo img {
@@ -871,16 +890,16 @@ p {
   padding: 0;
 }
 
-.right-logo img {
-  max-width: 230px;
-  min-width: 150px;
-  width: auto;
-  height: auto;
-  border-radius: 0;
-  object-fit: contain;
-  padding: 0;
-  background: transparent;
+.Year {
+  margin-top: 8px;
 }
+
+.Year img {
+  width: 90px;
+  height: 20vh;
+}
+
+
 
 /* .header-center {
   flex: 1;
@@ -1655,7 +1674,6 @@ p {
 
 .workshop-speaker-details {
   text-align: center;
-  width: 100%;
   max-width: 320px;
   margin: 0 auto;
 }

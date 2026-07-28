@@ -36,6 +36,12 @@ import AuthorSubmission from './pages/AuthorSubmission';
 
 import CameraSubmission from './pages/CameraSubmission';
 
+import Workshop2 from './pages/workshop2';
+
+import Workshop3 from './pages/workshop3';
+
+import Workshop4 from './pages/workshop4';
+
 import './App.css';
 
 
@@ -61,6 +67,12 @@ function App() {
             <Route path="/conference" element={<Conference />} />
 
             <Route path="/workshop" element={<Workshop />} />
+
+            <Route path="/workshop2" element={<Workshop2 />} />
+
+            <Route path="/workshop3" element={<Workshop3 />} />
+
+            <Route path="/workshop4" element={<Workshop4 />} />
 
             <Route path="/tracks" element={<Tracks />} />
 
