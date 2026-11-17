@@ -87,13 +87,14 @@ const Workshop = () => {
             </div>
             <div className="workshop-speaker-card-body">
               <img
-                src=""
-                alt=""
+                src="/images/akash-sharma.png"
+                alt="Akash Sharma"
                 className="workshop-speaker-photo"
               />
               <div className="workshop-speaker-details">
-                <h4></h4>
-                <p></p>
+                <h4> Mr. Aakash Sharma 
+                </h4>
+                <p>Cybertegh Pvt. Ltd. , Chandigarh</p>
               </div>
             </div>
           </div>

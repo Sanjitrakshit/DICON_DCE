@@ -6,13 +6,15 @@ const Tracks = () => {
       <div className="row">
         <main className="content">
           <div className="card-box">
-            <h1>Call for Papers</h1>
+            <h1 style={{ color: "#185668" }}>
+              Call for Papers
+            </h1>
             <p>
-              DICON 2027 invites original research papers in the areas of intelligent computing and emerging technologies. 
-              The conference provides a global platform for researchers, academicians, industry professionals, and students 
+              DICON 2027 invites original research papers in the areas of intelligent computing and emerging technologies.
+              The conference provides a global platform for researchers, academicians, industry professionals, and students
               to share pioneering ideas that shape the technological landscape of tomorrow.
             </p>
-            
+
             <h3>Conference Theme</h3>
             <p>
               Empowering the Future through Intelligent and Sustainable computing
@@ -105,7 +107,7 @@ const Tracks = () => {
 
             <h3>Submission Guidelines</h3>
             <p>
-              Paper Submission: All manuscripts must be submitted electronically through the Microsoft CMT submission system. Authors can submit their papers using the following link: <a href="https://cmt3.research.microsoft.com/" target="_blank" rel="noopener noreferrer">CMT Submission Portal</a>.
+              Paper Submission: All manuscripts must be submitted electronically through the Microsoft CMT submission system. Authors can submit their papers using the following link: <a href="https://cmt3.research.microsoft.com/DICON2027" target="_blank" rel="noopener noreferrer">CMT Submission Portal</a>.
             </p>
             <p>
               For complete submission instructions, templates, and author preparation guidelines, please visit the Author Submission page.

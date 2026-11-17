@@ -57,7 +57,9 @@ const Plagiarism = () => {
               DICON 2027 emphasizes ethical research dissemination and expects
               all contributors to uphold the principles of transparency,
               originality, and academic integrity to ensure the credibility and
-              quality of the conference proceedings.
+              quality of the conference proceedings.<br/>
+              <a href="https://www.ieee.org/publications/rights/plagiarism" target="_blank" rel="noopener noreferrer">Plagiarism Policy</a><br/>
+              <a href="https://www.ieee.org/publications/rights/copyright-policy" target="_blank" rel="noopener noreferrer">Copyright Policy</a>
             </p>
           </div>
         </main>

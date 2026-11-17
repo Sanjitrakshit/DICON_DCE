@@ -5,13 +5,20 @@ const CameraSubmission = () => {
     <div className="container-fluid">
       <div className="row">
         <main className="content">
-          <div className="card-box" style={{ textAlign: 'center' }}>
-            <h1 style={{ margin: '0 0 16px 0', font: '28px Times', color: '#1b5c71', fontWeight: 'bold' }}>
-              Camera Submission
-            </h1>
-            <p style={{ fontSize: '20px', color: '#1f5f38', margin: '0', lineHeight: '1.5' }}>
-              Camera submission page is under construction. We will publish the full details shortly.
-            </p>
+          <div className="card-box">
+            <div className="page-header">
+              <h1>Camera Submission</h1>
+            </div>
+            <section>
+              <h3>Revision and Camera-Ready Submission Process</h3>
+              <p>
+                If your paper is accepted, you will receive instructions through CMT about the revision and camera-ready submission process.
+                Follow the portal's guidelines carefully and upload the final version by the camera-ready deadline.
+              </p>
+              <p>
+                Ensure the camera-ready paper includes author names, affiliations, and any required copyright forms or IEEE metadata as instructed.
+              </p>
+            </section>
           </div>
         </main>
       </div>

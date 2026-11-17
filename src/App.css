@@ -67,7 +67,7 @@ body {
 }
 
 .header-sticky {
-  
+
   top: 0;
   z-index: 1000;
   width: 100%;
@@ -84,6 +84,24 @@ body {
   border-bottom: 3px solid rgba(255, 255, 255, 0.12);
 }
 
+.social-icons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.social-icons img {
+  width: 42px;
+  height: 42px;
+  border-radius: 6px;
+
+  cursor: pointer;
+}
+
+.social-icons img:hover {
+  transform: translateY(-4px) scale(1.08);
+}
 
 .top-nav {
   background-color: var(--nav-bg);
@@ -113,14 +131,15 @@ body {
 }
 
 .header-record {
-  font-size: 14px;
+  font-size: 25px;
   opacity: 1;
   margin-bottom: 4px;
   font-weight: 600;
-  background-color: rgba(255, 255, 255, 0.15);
+  color: #FCE77E;
+  background-color: rgba(0, 0, 0, 0.25);
   padding: 6px 14px;
   border-radius: 5px;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid #F0C232;
   display: inline-block;
   letter-spacing: 0.5px;
 }
@@ -131,7 +150,7 @@ body {
 }
 
 .header-date {
-  font-size: 12px;
+  font-size: 35px;
   opacity: 0.9;
 }
 
@@ -149,7 +168,7 @@ body {
   overflow: visible;
 }
 
-.nav-list > li {
+.nav-list>li {
   position: relative;
   display: flex;
   align-items: center;
@@ -237,8 +256,10 @@ body {
 
 .content {
   max-width: 1200px;
-  margin: 16px auto 0; /* reduce top gap so content sits closer to gallery */
-  padding: 0; /* remove horizontal padding so edges align with gallery */
+  margin: 16px auto 0;
+  /* reduce top gap so content sits closer to gallery */
+  padding: 0;
+  /* remove horizontal padding so edges align with gallery */
   width: 100%;
 }
 
@@ -385,6 +406,7 @@ p {
   font-size: 18px;
   font-weight: 600;
 }
+
 .has-dropdown {
   position: relative;
 }
@@ -655,6 +677,7 @@ p {
   color: var(--text-muted);
   margin-top: 4px;
 }
+
 .home-layout {
   display: grid;
   grid-template-columns: 1fr 320px;
@@ -663,6 +686,7 @@ p {
   margin: 0 auto;
   padding: 0 15px;
 }
+
 .page-layout {
   display: grid;
   grid-template-columns: 1fr;
@@ -674,20 +698,23 @@ p {
 
 .hero-section {
   background-color: var(--white);
-  padding: 0; /* keep the hero flush with the edges */
+  padding: 0;
+  /* keep the hero flush with the edges */
 }
 
 .hero-image {
   position: relative;
   width: 100%;
   overflow: hidden;
-  height: 100vh; /* full viewport height */
+  height: 100vh;
+  /* full viewport height */
   max-height: none;
 }
 
 .hero-image img {
   width: 100%;
-  height: 100vh; /* full viewport height */
+  height: 100vh;
+  /* full viewport height */
   object-fit: cover;
   object-position: center;
   display: block;
@@ -696,19 +723,19 @@ p {
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0) 82%,
-    rgba(255, 255, 255, 0.5) 93%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0) 82%,
+      rgba(255, 255, 255, 0.5) 93%,
+      rgba(255, 255, 255, 1) 100%);
   pointer-events: none;
 }
 
 @media (max-width: 768px) {
+
   .hero-image,
   .hero-image img {
-    height: 46vh; /* reduce height on smaller screens */
+    height: 46vh;
+    /* reduce height on smaller screens */
     max-height: 46vh;
   }
 }
@@ -774,13 +801,17 @@ p {
   max-width: 100%;
   width: 100%;
   margin: 0 auto;
-  padding: 10px 36px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  overflow: hidden;
   display: grid;
   grid-template-columns: minmax(180px, 1fr) auto minmax(180px, 1fr);
   align-items: center;
   gap: 24px;
   overflow-x: hidden;
 }
+
+
 
 /* .header-container {
   max-width: 1200px;
@@ -819,7 +850,8 @@ p {
   font-family: "Source Serif 4", Georgia, serif;
   font-size: clamp(1.9rem, 4.2vw, 3.4rem);
   font-weight: 800;
-  color: #0c4a80; /* Royal deep blue */
+  color: #0c4a80;
+  /* Royal deep blue */
   margin: 0 0 8px;
   letter-spacing: -0.02em;
   line-height: 1.1;
@@ -838,34 +870,63 @@ p {
   font-size: clamp(1.15rem, 3vw, 2rem);
   font-style: italic;
   font-weight: 700;
-  color: #008bdb; /* brighter sky blue */
+  color: #008bdb;
+  /* brighter sky blue */
   margin: 6px 0 0;
   letter-spacing: 0.02em;
   font-style: italic;
 }
 
 .header-logo {
-  display: flex;
   align-items: center;
 }
 
-.left-logo {
-  display: inline;
-  justify-self: start;
-}
-
 .right-logo {
-  justify-self: end;
-  transform: translateX(-30px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
 }
 
-.right-logo img {
-  max-width: 185px;
-  min-width: 150px;
- background: transparent;
+.right-logo .ieee-logo-img {
+  width: 180px;
+  height: 120px;
+  object-fit: contain;
+  margin: 8px 0 -2px;
+  border-radius: 10px;
 }
 
-.lego{
+.right-logo-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.right-logo-bottom .ieee-delhi-logo-img {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.right-logo-bottom .dicon-logo-img {
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+}
+
+.left-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-self: start;
+  margin-top: 30px;
+}
+
+
+.lego {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -874,7 +935,6 @@ p {
 }
 
 .header-logo img {
-  height: auto;
   display: block;
   background: transparent;
   padding: 0;
@@ -883,20 +943,27 @@ p {
   object-fit: contain;
 }
 
+.left-logo .left-logo-img {
+  width: 300px;
+  height: 120px;
+  margin: -80px 0 10px;
+}
+
 .left-logo img {
-  max-width: 3000px;
-  min-width: 300px;
+  max-width: 300px;
+  min-width: 0;
   background: transparent;
   padding: 0;
 }
 
 .Year {
-  margin-top: 8px;
+  margin-top: -20px;
 }
 
-.Year img {
-  width: 90px;
-  height: 20vh;
+.Year .year-logo-img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
 }
 
 
@@ -933,7 +1000,7 @@ p {
 }
 
 .header-subtitle {
-  font-size: 28px;
+  font-size: 32px;
   line-height: 1.5;
   margin-bottom: 8px;
   opacity: 0.95;
@@ -943,7 +1010,7 @@ p {
 .header-date {
   display: inline-block;
   margin: 10px;
-  font-size: 0.975rem;
+  font-size: 30px;
   font-weight: 500;
   padding: 10px 14px;
   border-radius: 20px;
@@ -965,12 +1032,8 @@ p {
     min-width: 110px;
   }
 
-  .right-logo img {
-    width: 100px;
-    height: 100px;
-    min-width: 100px;
-    padding: 6px;
-    background: rgba(255, 255, 255, 0.96);
+  .Year .year-logo-img {
+    max-width: 160px;
   }
 }
 
@@ -983,11 +1046,13 @@ p {
   .header-container {
     max-width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
     grid-template-areas:
       "logo-left logo-right"
       "content content";
-    row-gap: 6px;
+    padding: 8px 10px;
+    column-gap: 8px;
+    row-gap: 8px;
     align-items: center;
     text-align: center;
   }
@@ -995,35 +1060,57 @@ p {
   .left-logo {
     grid-area: logo-left;
     display: flex;
-    justify-content: flex-start; /* 🔥 edge aligned */
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    min-width: 0;
+    margin-top: 0;
   }
 
   .right-logo {
     grid-area: logo-right;
-    display: flex;
-    justify-content: flex-end; /* 🔥 edge aligned */
-    padding-right: 12px; /* move the right logo slightly left */
+    width: 100%;
   }
 
-  /* Kill desktop transform safely */
-  .left-logo img,
-  .right-logo img {
-    transform: none !important;
+  .right-logo .ieee-logo-img {
+    width: 100%;
+    max-width: 160px;
+    height: auto;
+    max-height: 90px;
   }
 
-  /* Balanced mobile logo size */
-  .left-logo img {
-    max-width: 120px;
-    min-width: 90px;
-    padding: 6px 8px;
+  .right-logo-bottom {
+    gap: 4px;
   }
 
-  .right-logo img {
-    width: 80px;
-    height: 80px;
-    min-width: 80px;
-    padding: 5px;
-    background: rgba(255, 255, 255, 0.96);
+  .right-logo-bottom .ieee-delhi-logo-img,
+  .right-logo-bottom .dicon-logo-img {
+    width: calc((100% - 4px) / 2);
+    max-width: 96px;
+    height: auto;
+    aspect-ratio: 1;
+    flex: 0 1 96px;
+    transform: none;
+  }
+
+  .left-logo .left-logo-img {
+    width: clamp(100px, 36vw, 150px);
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .Year {
+    margin-top: 0;
+  }
+
+  .Year .year-logo-img {
+    width: clamp(64px, 19vw, 80px);
+    max-width: 100%;
+    min-width: 0;
+    height: auto;
   }
 
   .accreditation {
@@ -1039,7 +1126,10 @@ p {
   /* Center text cleanly */
   .header-center {
     grid-area: content;
-    padding-top: 4px;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
+    padding: 4px 2px 6px;
   }
 
   .header-institute {
@@ -1048,18 +1138,29 @@ p {
   }
 
   .header-title {
-    font-size: 22px;
+    font-size: clamp(20px, 5.2vw, 24px);
     margin-bottom: 4px;
   }
 
   .header-subtitle {
-    font-size: 13.5px;
-    line-height: 1.4;
+    font-size: clamp(12px, 3.2vw, 14px);
+    line-height: 1.35;
     margin-bottom: 4px;
   }
 
+  .header-record {
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 5px 8px;
+    font-size: clamp(10px, 2.8vw, 13px);
+    line-height: 1.35;
+    white-space: normal;
+  }
+
   .header-date {
-    font-size: 12.5px;
+    margin: 6px 0 2px;
+    padding: 7px 10px;
+    font-size: clamp(11px, 3vw, 13px);
   }
 }
 
@@ -1069,12 +1170,15 @@ p {
 
 @media (max-width: 768px) {
   .menu-toggle {
-    display: block;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 48px;
     background: none;
     border: none;
     color: #fff;
     font-size: 28px;
-    padding: 12px 16px;
+    padding: 8px 16px;
     cursor: pointer;
   }
 
@@ -1096,7 +1200,7 @@ p {
     display: flex;
   }
 
-  .nav-list > li {
+  .nav-list>li {
     display: block;
     width: 100%;
     text-align: center;
@@ -1110,6 +1214,9 @@ p {
     padding: 14px 16px;
     color: var(--white) !important;
     font-size: 15px;
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: anywhere;
   }
 
   .has-dropdown:hover .dropdown-list {
@@ -1161,10 +1268,12 @@ p {
     text-align: center;
   }
 }
+
 .gallery-container {
   position: relative;
   max-width: 1200px;
-  margin: 40px auto 0; /* remove bottom gap so content sits directly below */
+  margin: 40px auto 0;
+  /* remove bottom gap so content sits directly below */
   border-radius: var(--radius);
   background: var(--bg-light);
   overflow: hidden;
@@ -1220,7 +1329,8 @@ p {
 
 @media (max-width: 768px) {
   .gallery-container {
-    margin: 24px 16px 0; /* remove bottom gap on mobile */
+    margin: 24px 16px 0;
+    /* remove bottom gap on mobile */
   }
 
   .gallery-container img,
@@ -1233,17 +1343,20 @@ p {
     padding: 10px 14px;
   }
 }
+
 .card-box-contact {
   max-width: 100%;
   overflow-wrap: break-word;
   word-wrap: break-word;
   word-break: break-word;
 }
+
 .card-box-contact a {
   word-break: break-all;
   overflow-wrap: anywhere;
   text-decoration: underline;
 }
+
 .card-box-contact a {
   color: #2c6e7e;
   font-weight: 500;
@@ -1673,9 +1786,16 @@ p {
 }
 
 .workshop-speaker-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  max-width: 320px;
+  max-width: 560px;
   margin: 0 auto;
+}
+
+.workshop-speaker-details p {
+  white-space: nowrap;
 }
 
 .workshop-speaker-card h4 {
@@ -1695,9 +1815,12 @@ p {
 .workshop-speaker-card p {
   margin: 0;
   color: var(--text-muted);
+  text-align: center;
+  text-justify: auto;
 }
 
 @media (max-width: 768px) {
+
   .workshop-details-grid,
   .workshop-stats-grid {
     grid-template-columns: 1fr;
@@ -1791,16 +1914,54 @@ p {
   opacity: 0.85;
 }
 
-.footer-bottom {
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 16px 24px;
+.footer-center {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 24px 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
-.footer-bottom p {
-  margin: 0;
+.footer-center p,
+.footer-copyright,
+.footer-credit-title,
+.footer-credit-line {
+  text-align: center !important;
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer-copyright {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.footer-credit-title {
   font-size: 13px;
-  opacity: 0.65;
+  color: var(--accent);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.footer-developer-name {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.footer-credit-role {
+  color: rgba(255, 255, 255, 0.75);
 }
 
 @media (max-width: 768px) {

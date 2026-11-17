@@ -36,7 +36,7 @@ const sections = [
       'Prof. (Dr.) Ashima Mehta, Vice-Principal, Dronacharya College of  Engineering, Gurugram, Haryana, India.',
       'Ms. Neha Chauhan, Head RDC & HoD, Department of Mechanical Engineering, Dronacharya College of Engineering,  Gurugram, Haryana, India',
       'Ms. Pooja Sharma, HoD, Department of Applied Science & Humanities, Dronachary College of Engineering, Gurugram, Haryana, India. (Technical Program Chair)',
-      'Dr. Deepak Kumar, HoD, Department of Computer Science and Engineering , (Artificial Intelligence and Machine Learning), Dronacharya College of Engineering, Gurugram, Haryana, India',
+      'Mr. Yashvardhan Soni, HoD, Department of Computer Science and Engineering , (Artificial Intelligence and Machine Learning), Dronacharya College of Engineering, Gurugram, Haryana, India',
       'Dr. Monika Rani, HoD, Department of Electronics and Communication Engineering, Dronacharya College of Engineering, Gurugram, Haryana, India',
       'Mr. Ashwani Kumar, HoD, Department of Computer Science and Information Technology, Dronacharya College of Engineering, Gurugram, Haryana, India',
       'Ms. Sravani Nidadavolu, Head, IQAC, Dronacharya College of Engineering, Gurugram, Haryana, India',
@@ -45,9 +45,9 @@ const sections = [
   {
     title: 'Industry Liaison & Business Development Chairs',
     members: [
-      'Mr. Yashvardhan Soni, TechLead, Dronacharya College of Engineering, Gurugram, Haryana, India',
       'Ms. Renu Dua, Head, Career and Development Cell, Dronacharya College of Engineering, Gurugram, Haryana, India',
       'Ms Akanksha, Training and Placement Officer, Dronacharya College of Engineering, Gurugram, Haryana, India',
+      'Ms. Sonali Thakur, Professional Skills Coach, Dronacharya College of Engineering, Gurugram, Haryana, India',
       'Ms. Nidhi Srivastava, Assistant Professor, Department of Computer Science and Information Technology, Dronacharya College of Engineering, Gurugram, Haryana, India',
       'Ms. Kanika Lamba, IEEE Student Branch Counceller, Dronacharya College of Engineering, Gurugram, Haryana, India.',
     ],
@@ -56,8 +56,9 @@ const sections = [
     title: 'Student Activities & Poster Presentation Chairs',
     members: [
       'Dr. Priyanka Verma, Assistant Professor, Department of Electronics and Communication Engineering, Dronacharya College of Engineering, Gurugram, Haryana, India',
-      'Ms. Ruchi, Assistant Professor, Department of Electronics and Communication Engineering, Dronacharya College of Engineering, Gurugram, Haryana, India.',
       'Ms. Vimmi Malhotra, Assistant Professor, Department of Computer Science and Information Technology, Dronacharya College of Engineering, Gurugram, Haryana, India.',
+      'Ms. Ruchi, Assistant Professor, Department of Electronics and Communication Engineering, Dronacharya College of Engineering, Gurugram, Haryana, India.',
+      'Ms. Karuna, Assistant Professor, Department of Applied Science and Humanities, Dronacharya College of Engineering, Gurugram, Haryana, India'
     ],
   },
   {

@@ -17,7 +17,7 @@ const Workshop = () => {
           <div className="page-header committee-page-header">
             <h1>Code to Insight: Practical ML for Real-World Applications</h1>
             <p className="committee-page-subtitle">
-              Three Days Practical Oriented Workshop
+              Three Days Practical Oriented Workshop (22–24 April 2027)
             </p>
             <span className="workshop-level-badge">Level: Basic &amp; Intermediate</span>
           </div>

@@ -29,11 +29,60 @@ const Footer = () => {
           <p>Dronacharya College of Engineering</p>
           <p>Gurugram, Haryana, India</p>
           <a href="mailto:dicon.dce@gmail.com">dicon.dce@gmail.com</a>
+          <div className="social-icons">
+            <a href="https://www.whatsapp.com/channel/0029VaEURgL3rZZb7AlnWa3i" target="_blank" rel="noreferrer">
+              <img src="/images/whatsapp.png" alt="WhatsApp" />
+            </a>
+
+            <a href="https://www.facebook.com/DronacharyaGurgaon" target="_blank" rel="noreferrer">
+              <img src="/images/facebook.png" alt="Facebook" />
+            </a>
+
+            <a href="https://www.instagram.com/dce_dronacharyacollege/" target="_blank" rel="noreferrer">
+              <img src="/images/instagram.png" alt="Instagram" />
+            </a>
+
+            <a href="https://www.youtube.com/@dronacharyacollegeofengine7116" target="_blank" rel="noreferrer">
+              <img src="/images/youtube.png" alt="YouTube" />
+            </a>
+
+            <a href="https://www.linkedin.com/school/dronacharya-college-of-engineering/" target="_blank" rel="noreferrer">
+              <img src="/images/linkedin.png" alt="LinkedIn" />
+            </a>
+          </div>
+
         </div>
       </div>
+      <div className="footer-center">
+        <p className="footer-copyright">
+          &copy; 2026–2027 DICON – International Conference. All Rights Reserved.
+        </p>
 
-      <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} DICON 2027. All rights reserved.</p>
+        <div className="footer-credit">
+          <p className="footer-credit-line">
+            <span className="footer-credit-title">
+              Website Development Team :
+            </span>{' '}
+
+            <span className="footer-developer-name">
+              Ritika, Lehar, Sanjit
+            </span>
+
+            <span className="footer-credit-role">
+              {' '}— B.Tech Students, DCE, Gurugram
+            </span>
+
+            {' ; '}
+
+            <span className="footer-developer-name">
+              Mr. Satender Pal
+            </span>
+
+            <span className="footer-credit-role">
+              {' '}— System Administrator, DCE, Gurugram
+            </span>
+          </p>
+        </div>
       </div>
     </footer>
   );

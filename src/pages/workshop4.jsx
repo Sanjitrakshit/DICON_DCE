@@ -86,13 +86,14 @@ const Workshop = () => {
             </div>
             <div className="workshop-speaker-card-body">
               <img
-                src=""
-                alt=""
+                src="/images/kajal.jpeg"
+                alt="Kajal P. Rajvaidya"
                 className="workshop-speaker-photo"
               />
               <div className="workshop-speaker-details">
-                <h4></h4>
-                <p></p>
+                <h4>Ms. Kajal P. Rajvaidya</h4>
+                <p>CEO &amp; Founder, KITS Tech. Learning Center</p>
+                <p>Akola, Maharashtra</p>
               </div>
             </div>
           </div>

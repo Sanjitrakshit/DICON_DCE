@@ -56,15 +56,23 @@ const Header = () => {
         <div className="header-container">
           <div className="header-logo left-logo">
             <img
+              className="left-logo-img"
               src="/images/dce-logo2.png"
               alt="Dronacharya College of Engineering Logo"
             />
-            <div className="Year"><img src="/images/Year-of-Excellnece-DCE.jpg" alt="Year of Excellnence" /></div>
+
+            <div className="Year">
+              <img
+                className="year-logo-img"
+                src="/images/Year-of-Excellnece-DCE.png"
+                alt="27 Years of Excellence"
+              />
+            </div>
           </div>
 
           <div className="header-center">
             <div className="header-subtitle">
-              1<sup>st</sup> Dronacharya International Conference on Intelligent
+              1<sup>st</sup> Dronacharya International Conference <br/>  on  <br/>Intelligent
               Computing & Emerging Technologies
             </div>
 
@@ -76,12 +84,33 @@ const Header = () => {
 
             <div className="header-date">23 - 24 April, 2027 | Hybrid Mode</div>
           </div>
+          {/* Bottom Round Logos */}
+          <div
+            className="header-logo right-logo"
+          >
+            {/* IEEE Rectangle */}
+            <img
+              className="ieee-logo-img"
+              src="/images/ieee.png"
+              alt="IEEE Logo"
+            />
 
-          <div className="header-logo right-logo">
-            <img src="/images/dicon2027.png" alt="DICON 2027 Logo" />
-            <div className="header-logo lego">
-              <img src="/images/ieee.png" alt="IEEE_logo" />
-              <img src="/images/ieee-D.png" alt="IEEE_DELHI" />
+            {/* Bottom Round Logos */}
+            <div
+              className="right-logo-bottom"
+            >
+            
+            <img
+                className="ieee-delhi-logo-img"
+                src="/images/ieee-D.png"
+                alt="IEEE Delhi Section Logo"
+              />
+              <img
+                className="dicon-logo-img"
+                src="/images/dicon.png"
+                alt="DICON 2027 Logo"
+              />
+
             </div>
           </div>
         </div>
@@ -89,11 +118,18 @@ const Header = () => {
 
       <nav className="top-nav" ref={navRef}>
         {/* HAMBURGER (mobile only) */}
-        <button className="menu-toggle" onClick={toggleMenu}>
-          ☰
+        <button
+          type="button"
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-navigation"
+        >
+          {isMenuOpen ? '×' : '☰'}
         </button>
 
-        <ul className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
+        <ul id="primary-navigation" className={`nav-list ${isMenuOpen ? 'active' : ''}`}>
           <li><Link to="/" className={isActive('') ? 'active' : ''} onClick={handleLinkClick}>Home</Link></li>
           <li><Link to="/institute" className={isActive('institute') ? 'active' : ''} onClick={handleLinkClick}>About Institute</Link></li>
           <li><Link to="/conference" className={isActive('conference') ? 'active' : ''} onClick={handleLinkClick}>About Conference</Link></li>
@@ -111,7 +147,7 @@ const Header = () => {
               <li><Link to="/workshop" className={isActive('workshop') ? 'active' : ''} onClick={handleLinkClick}>Code to Insight: Practical ML for Real-World Applications</Link></li>
               <li><Link to="/workshop2" className={isActive('advisory') ? 'active' : ''} onClick={handleLinkClick}>Data Analytics, AI & Model-Based Design with MATLAB</Link></li>
               <li><Link to="/workshop3" className={isActive('oversight') ? 'active' : ''} onClick={handleLinkClick}>Applied Cybersecurity Techniques: A Practical Intensive</Link></li>
-              <li><Link to="/workshop3" className={isActive('oversight') ? 'active' : ''} onClick={handleLinkClick}>FutureTech Workshop: Drones, Robotics & Embedded Intelligence </Link></li>
+              <li><Link to="/workshop4" className={isActive('oversight') ? 'active' : ''} onClick={handleLinkClick}>FutureTech Workshop: Drones, Robotics & Embedded Intelligence </Link></li>
 
 
             </ul>
@@ -186,9 +222,6 @@ const Header = () => {
           </div>
           <div className="item">
             <img src="/images/NBA.jpg" alt="NBA" />
-          </div>
-          <div className="item">
-            <img src="/images/Year-of-Excellnece-DCE.jpg" alt="Year of Excellence DCE" />
           </div>
         </div>
       )}

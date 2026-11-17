@@ -82,19 +82,19 @@ function App() {
 
             <Route path="/oversight" element={<SectionOversight />} />
 
-          <Route path="/plenary" element={<Plenary />} />
+            <Route path="/plenary" element={<Plenary />} />
 
-          <Route path="/keynote" element={<Keynote />} />
+            <Route path="/keynote" element={<Keynote />} />
 
-          <Route path="/registration" element={<Registration />} />
+            <Route path="/registration" element={<Registration />} />
 
-          <Route path="/contact" element={<Contact />} />
+            <Route path="/contact" element={<Contact />} />
 
-          <Route path="/plagiarism" element={<Plagiarism />} />
+            <Route path="/plagiarism" element={<Plagiarism />} />
 
-          <Route path="/author-submission" element={<AuthorSubmission />} />
+            <Route path="/author-submission" element={<AuthorSubmission />} />
 
-          <Route path="/camera-submission" element={<CameraSubmission />} />
+            <Route path="/camera-submission" element={<CameraSubmission />} />
 
           </Routes>
 
